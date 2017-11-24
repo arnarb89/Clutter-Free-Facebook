@@ -1,0 +1,20 @@
+{
+	"name":"Clutter Free Facebook",
+	"description":"This extension can disable the newsfeed and other useless modules on Facebook. Empower your life and disable the distractions!",
+	"options_page": "options.html",
+	"version":"1.1.1.2",
+	"manifest_version":2,
+	"content_scripts": [ 
+	  {
+	  "matches": ["*://*.facebook.com/*"],
+	  "js": ["myscript.js"]
+	    } 
+	  ],
+	"permissions": [
+	          "storage"
+	        ],
+
+	"icons": { "16": "/images/icons/icon16.png",
+	           "48": "/images/icons/icon48.png",
+	          "128": "/images/icons/icon128.png" }
+}
